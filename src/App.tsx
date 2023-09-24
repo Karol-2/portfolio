@@ -1,14 +1,26 @@
-import React from "react";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import "./App.scss";
-import { NavBar } from "./components/NavBar";
+import AboutMe from "./components/AboutMe";
+import Education from "./components/Education";
+import Home from "./components/Home";
+import NavBar from "./components/NavBar";
+import Projects from "./components/Projects";
 
 function App() {
-
-
   return (
-    <div className="App">
-      <NavBar />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <NavBar />
+        <div className="page-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/about-me" element={<AboutMe />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
