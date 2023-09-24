@@ -4,11 +4,12 @@
 
 .nav-bar{
     background-color: $darker;
-    @include restricted_width_wide;
+    @include restricted_width_wide_fill;
     color: $light; 
     display: flex; 
     justify-content: center; 
-    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
 
     button{
         all:unset

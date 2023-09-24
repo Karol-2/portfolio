@@ -1,5 +1,4 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-import "./App.scss";
 import AboutMe from "./components/AboutMe";
 import Education from "./components/Education";
 import Home from "./components/Home";
@@ -11,13 +10,13 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <NavBar />
-        <div className="page-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/education" element={<Education />} />
-            <Route path="/about-me" element={<AboutMe />} />
-            <Route path="/projects" element={<Projects />} />
-          </Routes>
+      <div className="page-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/about-me" element={<AboutMe />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
         </div>
       </div>
     </BrowserRouter>

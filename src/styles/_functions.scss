@@ -1,7 +1,15 @@
-@mixin restricted_width_wide() {
+@mixin restricted_width_wide_fill() {
     padding: 0 15%;
   }
 
-@mixin restricted_width_narrow() {
+@mixin restricted_width_narrow_fill() {
     padding: 0 20%;
+  }
+
+@mixin restricted_width_wide() {
+    margin: 0 15%;
+  }
+
+@mixin restricted_width_narrow() {
+    margin: 0 20%;
   }

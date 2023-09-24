@@ -6,7 +6,7 @@ export interface IEducationProps {
 export default function Education (props: IEducationProps) {
   return (
     <div>
-      Educations
+      Education
     </div>
   );
 }

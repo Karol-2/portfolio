@@ -29,7 +29,7 @@ export default function NavBar() {
               navigate("/education");
             }}
           >
-            Educations
+            Education
           </button></li>
         <li className="nav-element"> <button
             onClick={() => {

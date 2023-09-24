@@ -1,0 +1,121 @@
+@import "../styles/variables";
+@import "../styles/functions";
+
+.Home-background{
+    height: 100%;
+    margin: 0 15%;
+    
+}
+
+.Home{
+    border-radius: 10px;
+    height: 50%;
+    color: $darker;
+    padding: 0.75em;
+    background-color: $lighter;
+}
+
+
+.gradient-bg{  
+    height: 100%;
+    width: 100%;
+    
+    border-radius: 10px;
+    background-image: $gradient;
+    background-size: 200%;
+    animation: bg-animation 5s infinite alternate;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+@keyframes bg-animation {
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+
+.content{
+    padding: 10em;
+
+    .info{
+    
+        p{
+            margin:0;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .welcome{
+           font-size: 5em;
+           
+        }
+        .name{
+            font-weight: bold;
+            font-size:4em;
+        }
+        
+        .title{
+            font-size: 3em;
+            animation: typing 2s steps(24),
+           cursor .4s step-end infinite alternate;
+        }
+    }
+    @keyframes typing {
+        from { width:0}
+    }
+    @keyframes cursor {
+        50% {border-color: transparent;}
+    }
+
+    .buttons{
+        font-size: 1.5em;
+        .hire{
+            background-color: $dark;
+            color: $light;
+            border-color: 0;
+            padding: 0.5em 1.5em;
+            font-size: 1em;
+            margin: 1em 1em;
+            border-radius: 20px;
+            cursor:pointer;
+            box-shadow: none;
+            white-space: nowrap;
+            
+            transition: background-color 0.3s; 
+        
+            &:hover {
+                background-color: lighten($dark, 15%); 
+                border-color: lighten($dark, 15%) ;
+            }
+          
+          
+        }
+        .email{
+            background-color: $lighter;
+            color: $darker;
+            border:0;
+            padding: 0.5em 1.5em;
+            font-size: 1em;
+            margin: 1em 1em;
+            border-radius: 20px;
+            cursor:pointer;
+            box-shadow: none;
+            white-space: nowrap;
+            &:hover {
+                background-color: darken($lighter, 10%); 
+                border-color: darken($lighter, 10%) ;
+            }
+          
+        }
+    }
+    
+}
+
+
+
+

@@ -5,8 +5,11 @@ export interface IAboutMeProps {
 
 export default function AboutMe (props: IAboutMeProps) {
   return (
-    <div>
-      About Me
+    <div className='AboutMe-background'>
+      <div className='AboutMe'>
+     
+      </div>
+      
     </div>
   );
 }
