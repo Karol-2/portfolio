@@ -1,0 +1,13 @@
+@mixin hire_me() {
+    background-color: $dark;
+    color: $light;
+    padding: 1%;
+    border-radius: 20%;
+    cursor:pointer;
+    box-shadow: none;
+    white-space: nowrap;
+    -webkit-box-shadow: 0px 47px 72px -13px rgba(159, 159, 159, 1);
+-moz-box-shadow: 0px 47px 72px -13px rgba(159, 159, 159, 1);
+box-shadow: 0px 47px 72px -13px rgba(159, 159, 159, 1);
+
+  }

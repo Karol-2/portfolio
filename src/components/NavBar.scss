@@ -1,4 +1,23 @@
 @import "../styles/variables";
+@import "../styles/functions";
+
+
+.nav-bar{
+    background-color: $darker;
+    @include restricted_width_wide;
+    color: $light; 
+    display: flex; 
+    justify-content: center; 
+    border-radius: 10px;
+}
+
+ul{
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    justify-content: space-evenly;
+    width: 100%;
+}
 
 .nav-element{
     position: relative;
@@ -21,7 +40,7 @@
 }
 
 .nav-element:hover{
-    color: black;
+    color: $secondary;
 }
 
 .nav-element:hover::after{
