@@ -1,0 +1,87 @@
+@import "../styles/variables";
+@import "../styles/functions";
+@import "../styles/animations";
+@import "../styles/buttons";
+
+.Home-background {
+    min-height: 100vh;
+    @include restricted_width_wide()
+}
+
+.Home {
+    border-radius: 10px;
+    height: 100vh;
+    color: $darker;
+    padding: 0.75em;
+    background-color: $lighter;
+}
+
+
+.gradient-bg {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 10px;
+    background-image: $gradient;
+    background-size: 200%;
+    animation: bg-animation 5s infinite alternate;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+.content {
+
+    .info {
+        animation: fly-in-left 1s ease-in-out;
+
+        p {
+            margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .welcome {
+            font-size: 4em;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 4em;
+        }
+
+        .title {
+            font-size: 3em;
+        }
+
+    }
+
+
+    .buttons {
+        opacity: 0;
+        font-size: 1.5em;
+        animation: fade-in 2s ease-in-out forwards;
+        animation-delay: 1s;
+
+        .hire {
+            @include primary_button()
+        }
+
+        .email {
+            @include secondary_button()
+        }
+    }
+
+}

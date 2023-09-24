@@ -1,6 +1,8 @@
 @mixin primary_button() {
   background-color: $dark;
   color: $light;
+  font-size: 1.5em;
+  border: 0;
   padding: 0.5em 1.5em;
   font-size: 1em;
   margin: 1em 1em;
@@ -8,6 +10,30 @@
   cursor:pointer;
   box-shadow: none;
   white-space: nowrap;
+  
+  transition: background-color 0.3s; 
 
+  &:hover {
+      background-color: lighten($dark, 15%); 
+      border-color: lighten($dark, 15%) ;
+  }
 
   }
+
+@mixin secondary_button(){
+  background-color: $lighter;
+  color: $darker;
+  font-size: 1.5em;
+  border: 0;
+  padding: 0.5em 1.5em;
+  font-size: 1em;
+  margin: 1em 1em;
+  border-radius: 20px;
+  cursor:pointer;
+  box-shadow: none;
+  white-space: nowrap;
+  &:hover {
+      background-color: darken($lighter, 10%); 
+      border-color: darken($lighter, 10%) ;
+  }
+}
