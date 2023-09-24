@@ -74,6 +74,14 @@
         font-size: 1.5em;
         animation: fade-in 2s ease-in-out forwards;
         animation-delay: 1s;
+        display: flex;
+        justify-content: center;
+        
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
         .hire {
             @include primary_button()
