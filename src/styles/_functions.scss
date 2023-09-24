@@ -1,0 +1,7 @@
+@mixin restricted_width_wide() {
+    padding: 0 15%;
+  }
+
+@mixin restricted_width_narrow() {
+    padding: 0 20%;
+  }
