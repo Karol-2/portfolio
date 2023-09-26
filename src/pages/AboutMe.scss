@@ -15,6 +15,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around ;
+    text-align: center;
+
+    animation: fly-in-left 1s ease-in-out;
 
     .circle-avatar{
         width: 10em;
@@ -55,6 +58,9 @@
     justify-content: space-evenly;
     align-content: space-between;
 
+    animation-delay: 4s;
+    animation: fly-in-bottom 2s ease-in-out;
+
     .interests{
         border-width: 1em;
         border-color: red;
@@ -75,6 +81,20 @@
             padding: 1em;
             border-radius: 50%;
             margin-right: 2em;
+            color: $light;
+
+            &:hover{
+                background-color: $light;
+                color: $dark;
+                border:0.1em $dark solid;
+            }
+        }
+    }
+
+    .interests:nth-child(even){
+        .logo{
+            background-color: $secondary;
+            border:0.1em $secondary solid;
             color: $light;
 
             &:hover{

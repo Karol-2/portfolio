@@ -19,10 +19,13 @@ export default function AboutMe(props: IAboutMeProps) {
   return (
     <div className="page-background grid">
       <div className="page basics">
+      <div>
         <div className="circle-avatar">
           <img src={photoUrl} alt="my face :)" className="avatar"></img>
+          
         </div>
         <p>Karol Krawczykiewicz</p>
+        </div>
         <div className="features">
           <p>Uni Student</p>
           <p>Beginner Programmer</p>
