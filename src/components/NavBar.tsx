@@ -11,7 +11,7 @@ export default function NavBar() {
         <li className="nav-element">
           <button
             onClick={() => {
-              navigate("/");
+              navigate("/portfolio");
             }}
           >
             Home

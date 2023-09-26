@@ -1,0 +1,18 @@
+@import "./variables";
+@import "./functions";
+@import "./animations";
+@import "./buttons";
+
+
+.page-background {
+    min-height: 100vh;
+    @include restricted_width_wide()
+}
+
+.page {
+    border-radius: 10px;
+    height: 100vh;
+    color: $darker;
+    padding: 0.75em;
+    background-color: $lighter;
+}

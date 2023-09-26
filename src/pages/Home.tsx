@@ -1,6 +1,8 @@
 import { faClipboard, faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import redirectToUrl from "../helper/redirectToUrl";
 import "./Home.scss";
+import "../styles/layout.scss"
 
 export interface IHomeProps {}
 
@@ -9,15 +11,12 @@ const copyEmail = (): void => {
   navigator.clipboard.writeText(email);
 };
 
-const redirectToLinkedin = (): void => {
-  const link: string = "https://www.linkedin.com/in/krawczykiewicz-karol";
-  window.open(link, "_blank");
-};
+const link: string = "https://www.linkedin.com/in/krawczykiewicz-karol";
 
 export default function Home(props: IHomeProps) {
   return (
-    <div className="Home-background">
-      <div className="Home">
+    <div className="page-background">
+      <div className="page">
         <div className="gradient-bg">
           <div className="content">
             <div className="info">
@@ -26,7 +25,7 @@ export default function Home(props: IHomeProps) {
               <p className="title">Computer Science Student</p>
             </div>
             <div className="buttons">
-              <button onClick={redirectToLinkedin} className="hire">
+              <button onClick={()=> redirectToUrl(link)} className="hire">
                 <FontAwesomeIcon icon={faCoffee} />
                 <p>Hire Me</p>
               </button>
