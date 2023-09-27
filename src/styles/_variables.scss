@@ -5,4 +5,6 @@ $lighter: #FAFAFA;
 $dark: #222222;
 $darker: #02101C;
 
-$gradient: linear-gradient(135deg,#FCE4D6,#B6E1D7,#4B9BCD,)
+$gradient: linear-gradient(135deg,#FCE4D6,#B6E1D7,#4B9BCD,);
+$gradient-inverse: linear-gradient(0,#FCE4D6,#B6E1D7,#4B9BCD,);
+$gradient-radial: radial-gradient(#FCE4D6,#B6E1D7,#4B9BCD);

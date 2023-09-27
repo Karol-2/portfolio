@@ -14,17 +14,16 @@ export default function AboutMe(props: IAboutMeProps) {
   const photoUrl: string =
     "https://avatars.githubusercontent.com/u/97386279?v=4";
 
-  const githubUrl: string = "https://github.com/Karol-2"
+  const githubUrl: string = "https://github.com/Karol-2";
 
   return (
     <div className="page-background grid">
       <div className="page basics">
-      <div>
-        <div className="circle-avatar">
-          <img src={photoUrl} alt="my face :)" className="avatar"></img>
-          
-        </div>
-        <p>Karol Krawczykiewicz</p>
+        <div>
+          <div className="circle-avatar">
+            <img src={photoUrl} alt="my face :)" className="avatar"></img>
+          </div>
+          <p>Karol Krawczykiewicz</p>
         </div>
         <div className="features">
           <p>Uni Student</p>
@@ -32,7 +31,12 @@ export default function AboutMe(props: IAboutMeProps) {
           <p>Hawaiian Pizza Enjoyer</p>
           <p>Swiftie Stan</p>
         </div>
-        <button className="github-button" onClick={()=>redirectToUrl(githubUrl)}>MY GITHUB PROFILE</button>
+        <button
+          className="github-button"
+          onClick={() => redirectToUrl(githubUrl)}
+        >
+          MY GITHUB PROFILE
+        </button>
       </div>
       <div className="page info">
         <div className="interests">
@@ -60,8 +64,8 @@ export default function AboutMe(props: IAboutMeProps) {
             <FontAwesomeIcon icon={faGamepad} />
           </div>
           <p>
-            In my non-work-life I also enjoy video games, photograpy, star wars
-            lore and ground tennis.
+            In my non-work-life, I also enjoy video games, photography, star
+            wars lore and ground tennis.
           </p>
         </div>
       </div>

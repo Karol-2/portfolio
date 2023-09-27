@@ -16,7 +16,7 @@ const link: string = "https://www.linkedin.com/in/krawczykiewicz-karol";
 export default function Home(props: IHomeProps) {
   return (
     <div className="page-background">
-      <div className="page">
+      <div className="page page-home">
         <div className="gradient-bg">
           <div className="content">
             <div className="info">
