@@ -12,19 +12,19 @@ export default function Education(props: IEducationProps) {
         <div className="timeline">
           <TimelineRight
             year="2023-2024"
-            title="3rd year at uni"
+            title="3rd year at University of Gdańsk"
             description="Subjects: group project, Angular, 3D graphics, concurrent programming, cloud services."
           />
 
           <TimelineLeft
             year="2022-2023"
-            title="2nd year at uni"
+            title="2nd year at University of Gdańsk"
             description="Subjects: Linux, React, machine learning, Java, Go, object-ortiented programming, testing and TDD."
           />
 
           <TimelineRight
             year="2021-2022"
-            title="1st year at uni"
+            title="1st year at University of Gdańsk"
             description="Subjects: discrete math, linear algebra, bash, functional programming, data structures, basics of webdev."
           />
 

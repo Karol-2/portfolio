@@ -1,6 +1,6 @@
-const redirectToUrl = (url: string): void => {
-    const link: string = url;
-    window.open(link, "_blank");
+const redirectToUrl = (url: string | undefined): void => {
+    if( typeof url === "string")
+     window.open(url, "_blank");
   };
 
   export default redirectToUrl

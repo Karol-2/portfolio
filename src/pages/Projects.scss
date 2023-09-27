@@ -1,0 +1,128 @@
+@import "../styles/variables";
+@import "../styles/functions";
+@import "../styles/animations";
+@import "../styles/buttons";
+
+.project-select {
+    height: 200px;
+    width: auto;
+    overflow: auto;
+    animation: fly-in-bottom 1s ease-in-out;
+
+    .project-button {
+        padding: 10px;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        ;
+        text-transform: capitalize;
+        text-align: center;
+        background-color: $secondary;
+        border: 0;
+        cursor: pointer;
+        transition: transform 0.3s;
+
+        &:nth-child(even) {
+            background-color: lighten($color: $primary, $amount: 20%)
+        }
+
+        &:hover {
+            transform: scale(1.07);
+            -webkit-box-shadow: 1px 21px 37px -9px rgba(175, 177, 192, 1);
+            -moz-box-shadow: 1px 21px 37px -9px rgba(175, 177, 192, 1);
+            box-shadow: 1px 21px 37px -9px rgba(175, 177, 192, 1);
+        }
+
+        &:active {
+            -webkit-box-shadow: inset 0px 0px 37px 1px rgba(175, 177, 192, 1);
+            -moz-box-shadow: inset 0px 0px 37px 1px rgba(175, 177, 192, 1);
+            box-shadow: inset 0px 0px 37px 1px rgba(175, 177, 192, 1);
+        }
+
+        p,
+        h2 {
+            margin: 0;
+        }
+    }
+}
+
+.project-info {
+    grid-column-start: 2;
+    grid-column: span 2;
+    animation: fly-in-bottom 2s ease-in-out;
+
+    .project {
+
+        .title {
+            margin-bottom: 0;
+        }
+
+        .date {
+            margin: 0;
+        }
+
+        .description {
+            text-align: justify;
+        }
+
+        .technologies {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            text-align: center;
+            align-content: center;
+
+            .technology {
+                background-color: $secondary;
+                border-radius: 50%;
+                padding: 1rem;
+                width: 3rem;
+                height: 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+
+                &:hover {
+                    animation: bounce 1s ease-in-out infinite;
+                    cursor: default;
+                }
+            }
+        }
+
+        .buttons-section {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 1rem;
+            font-size: larger;
+
+
+            .button-github {
+                @include primary_button();
+            }
+
+            .button-demo {
+                @include secondary_button();
+                border: 1px solid $dark;
+            }
+        }
+
+
+    }
+
+
+}
+
+.loading {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    opacity: 70%;
+    height: 100%;
+    font-weight: normal;
+    color: $dark;
+}

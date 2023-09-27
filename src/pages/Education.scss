@@ -2,6 +2,10 @@
 @import "../styles/functions";
 @import "../styles/animations";
 
+.page{
+  // animation: fly-in-bottom 2s ease-in-out;
+}
+
 .timeline {
   width: 80%;
   max-width: 800px;
@@ -27,8 +31,12 @@
   margin-bottom: 20px;
   border-radius: 6px;
 
-  animation: fade-in 2s ease-in-out forwards;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+  transition: transform 0.3s;
+  // animation-delay: 2s;
 
+  
   p {
     margin-bottom: 0;
     text-align:justify;
@@ -41,6 +49,11 @@
   h5 {
     margin: 0;
     opacity: 80%;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    z-index: 10;
   }
 }
 
