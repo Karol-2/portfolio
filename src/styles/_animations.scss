@@ -78,3 +78,16 @@
         transform: translateY(0);
     }
 }
+
+@keyframes glow-green {
+    0% {
+       background-color: $secondary ;
+    }
+
+    50% {
+        background-color: rgb(0, 247, 16);;
+    }
+    100%{
+        background-color: $secondary ;
+    }
+}
