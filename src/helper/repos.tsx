@@ -1,8 +1,76 @@
 const repos = [
   {
+    "name": "Mercury Project",
+    "descriptionShort": "Group work",
+    "descriptionLong": "It's a 4 person project for a bachelor's degree project. I am responsible for the frontend and project management. This project is a fullstack App with frontend in React, backend in TS and Postgres and MongoDB as databases. App enables real-time communication via text and video. There are also features such as friend managament system. Visual side is full with animations, custom logo, icons and cohesive color palette. Page is responsive and mobile-ready.",
+    "repoLink" : "https://github.com/Karol-2/Mercury-Project",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Sockets",
+      "WebRTC",
+      "Framer Motion",
+      "SCSS"
+    ],
+    "date": "Oct 2023 - Feb 2024"
+  },
+  {
+    "name": "Record Shop",
+    "descriptionShort": "Angular project",
+    "descriptionLong": "It's a full TypeScript app that mocks a shop website. As a customer user, you can browse, buy records and check your orders. As an admin, you can add, edit and remove auctions, as well as, manage users and orders. There are also many options for sorting and filtering auctions. The app display is optimized for every screen size.",
+    "repoLink" : "https://github.com/Karol-2/Record-Shop",
+    "technologies": [
+      "Angular v16",
+      "Angular Material",
+      "SCSS",
+      "TypeScript",
+      "Eslint"
+    ],
+    "date": "Dec 2023 - Feb 2024"
+  },
+  {
+    "name": "Cinema",
+    "descriptionShort": "Spring app",
+    "descriptionLong": "It's a Spring app + REST API that mocks the cinema ticket-buying system. Frontend is created with Thymeleaf. It works with SQL Postgres Database. There are separate pages for not logged-in users, logged users and administrators. Users can browse screening dates, check details, reserve and buy tickets for movies. An administrator has access to statistics from selected date ranges, and the management of movies and screenings.",
+    "repoLink" : "https://github.com/Karol-2/Spring-cinema",
+    "technologies": [
+      "Spring",
+      "Thymeleaf",
+      "Postgres",
+      "API"
+    ],
+    "date": "Nov 2023 - Jan 2024"
+  },
+  {
+    "name": "Movie API",
+    "descriptionShort": "Spring REST API",
+    "descriptionLong": "It's a movie API created in Spring. There are 4 domain models. The main one - movie, and supporting: genre, actor and review. Every domain has full CRUD implementation, some have a few business endpoints. There's also frontend-ready query endpoint for searching movies by title and other fields. It's fully validated API, with error messages and status codes.",
+    "repoLink" : "https://github.com/Karol-2/Spring-movie-api",
+    "technologies": [
+     "Spring",
+     "Postgres",
+     "Swagger",
+     "Postman",
+     "REST API"
+    ],
+    "date": "Feb 2024"
+  },
+  {
+    "name": "Battleships Game",
+    "descriptionShort": "Python realtime game",
+    "descriptionLong": "It's a python battle ships. It allows for a multiple games at the same time. You can create your own board or use one of existing schemas. Real-time responsivness thanks to UDP Server with sockets.",
+    "repoLink" : "https://github.com/Karol-2/Battleships-game",
+    "technologies": [
+      "Python",
+      "UDP Server",
+      "Concurrency"
+    ],
+    "date": "Jan 2024"
+  },
+  {
     "name": "Cocktail-Database",
     "descriptionShort": "full-stack app",
-    "descriptionLong": "This full-stack application allows you to easily explore a wide array of drink recipes, ingredients, leave comments, and rate drinks. Crafted using JavaScript, MongoDB, React, SCSS, and Bootstrap, it also features a comprehensive admin panel for drink, comment, and user account management, all secured with Keycloak. Everything runs seamlessly on Dockerfile Compose for a hassle-free experience. Cheers to discovering new cocktails and sharing your mixology journey with us!",
+    "descriptionLong": "This full-stack application allows you to easily explore a wide array of drink recipes, ingredients, leave comments, and rate drinks. it features a comprehensive admin panel for drink, comment, and user account management, all secured with Keycloak. Everything runs seamlessly on Dockerfile Compose for a hassle-free experience. Cheers to discovering new cocktails and sharing your mixology journey with us!",
     "repoLink": "https://github.com/Karol-2/Cocktail-Database",
     "technologies": [
       "React",
