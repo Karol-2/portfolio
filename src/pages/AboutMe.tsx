@@ -27,7 +27,7 @@ export default function AboutMe(props: IAboutMeProps) {
         </div>
         <p className="work-sign">OPEN TO WORK</p>
         <div className="features">
-          <p>3rd year student at the University of Gdańsk</p>
+          <p>Recent Graduate at the University of Gdańsk</p>
           <p>Computer Science, practical profile</p>
           <p>Beginner programmer</p>
           <p>Aspiring front-end developer</p>
@@ -46,9 +46,8 @@ export default function AboutMe(props: IAboutMeProps) {
           </div>
           <p>
             I`m a beginner programmer eager to expand my knowledge and skills in
-            computer science. Currently, I`m studying Practical Computer Science
-            at the University of Gdańsk. I`m in the third (final) year of my
-            Bachelor`s Degree.
+            computer science. Recently, I finished my Bachelor's degree in Practical Computer Science
+            at the University of Gdańsk. Currently I am seeking employment.
           </p>
         </div>
         <div className="interests">

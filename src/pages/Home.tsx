@@ -22,7 +22,7 @@ export default function Home(props: IHomeProps) {
             <div className="info">
               <p className="welcome">Hi!👋</p>
               <p className="name">I'm Karol</p>
-              <p className="title">Computer Science Student</p>
+              <p className="title">Computer Science Graduate</p>
             </div>
             <div className="buttons">
               <button onClick={()=> redirectToUrl(link)} className="hire">
